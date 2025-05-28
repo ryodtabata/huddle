@@ -1,14 +1,12 @@
+// this page is the home page where users will see all active people around them. 
 
 import { useRouter } from "expo-router";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, TouchableOpacity } from "react-native";
+import AppNavigator  from "./components/AppNavigator";
 
-export default function Index() {
-  const router = useRouter();
 
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Home screen</Text>
-      <Button title="Go to Profile" onPress={() => console.log('lol u pressed a lil button')} />
-    </View>
-  );
+export default function App() {
+  return <AppNavigator />;
 }
+
+
